@@ -1,6 +1,9 @@
 const quoteEl = document.getElementById('quote');
 const authorEl = document.getElementById('author');
 const btnEl = document.getElementById('btn');
+const likeEl = document.getElementById('like');
+
+let likes = 0;
 
 // Get a random quote from the anime quote API
 const getQuote = async () => {
@@ -20,5 +23,7 @@ const getQuote = async () => {
 // Initially get a quote
 getQuote();
 
-// When the button is clicked, get a new quote
-btnEl.addEventListener('click', getQuote);
+ // When the button is clicked, get a new quote 
+ btnEl.addEventListener('click', getQuote); 
+ // When the like button is clicked, increment the like counter 
+ likeEl.addEventListener('click', () => { likes++; likeEl.innerText = `Like (${likes})`; });
