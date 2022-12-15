@@ -7,4 +7,5 @@ An app that allows users to
 ## project set up  
 the app uses javascript HTML and CSS as the 
 language of typing 
-live repo link https://abdihamid58.github.io/ANIME/
+## live repo link
+ https://abdihamid58.github.io/ANIME/
